@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Plan\d\'Hopital</string>
+    <string name="position_prompt">Choisissez votre position</string>
+    <string name="destination_prompt">Choisissez votre destination</string>
+    <string-array name="position_array">
+        <item><font color="#ffffff">Entree</font></item>
+        <item><font color="#ffffff">Accueil</font></item>
+        <item><font color="#ffffff">Urgences</font></item>
+        <item><font color="#ffffff">Consultation</font></item>
+        <item><font color="#ffffff">Séjour</font></item>
+        <item><font color="#ffffff">Ophtalmologie</font></item>
+        <item><font color="#ffffff">Imagerie</font></item>
+        <item><font color="#ffffff">Pharmacie</font></item>
+        <item><font color="#ffffff">Local</font></item>
+        <item><font color="#ffffff">Oncologie</font></item>
+        <item><font color="#ffffff">LongSejour</font></item>
+        <item><font color="#ffffff">Ambulatoire</font></item>
+    </string-array>
+    <string name="scan">Scan</string>
+    <string name="principe">
+1/ Le principe de cette application\n\n
+        Cette application vous guide pas à pas de votre point de départ à votre point d’arrivée elle vous donnera toujours le chemin le plus court.
+   </string>
+    <string name="utilisation">
+2/ Pour une utilisation optimale\n\n
+        Un scanner de QR Code. Même si vous n’en possédez pas un, le Pour pouvoir utiliser cette application, l’idéal est d’avoir un smartphone pour pouvoir utiliser téléchargement et l’installation de cette application peut se réaliser avant le guidage, voici un exemple de scan: (barscanner de Zxing).\n
+        Quand l’application vous le demande, laissez-la activer la caméra pour flasher les QR Codes.\n
+        Tenez votre portable bien droit devant le symbole et suivez les indications. Vous aurez toujours votre portable en mode portrait.\n
+        Marchez normalement pour une précision optimale.
+</string>
+    <string name="commentcamarche">
+ 3/ Comment ça marche\n\n
+Lorsque vous aurez rentré votre position et choisi votre destination, l’application va vous guider pas à pas, par le chemin le plus court vers votre destination, à l’aide d’icônes, de textes et d’un guidage vocal.
+    </string>
+</resources>

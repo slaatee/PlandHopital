@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/the_hospital"
+ >
+    <TextView
+        android:id="@+id/textHop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="15dp"
+        android:text="Hopital du CNAM"
+        android:fontFamily="casual"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#fff" />
+    <View
+        android:layout_below="@id/textHop"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#fff" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="130dp"
+        android:paddingTop="18dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ib"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_world"
+            android:fontFamily="casual"
+            android:onClick="carteUp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/ib2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@drawable/ic_live_help_black_24dp"
+            android:onClick="helpMe"
+            android:fontFamily="casual"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carte"
+            android:fontFamily="casual"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Aide "
+            android:layout_marginLeft="50dp"
+            android:fontFamily="casual"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearText"
+        android:layout_margin="18dp"
+       android:gravity="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="15dp"
+        android:fontFamily="casual"
+        android:text="Cette application de guidage vous donne le chemin le plus court pour accéder à votre destination."
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        />
+    <View
+        android:layout_below="@id/textIntro"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/secondaryTextColor" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/valider"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:fontFamily="casual"
+        android:textColor="#fff"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textIntro"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle"
+        android:onClick="scanUp"
+        android:drawableTop="@drawable/ic_directions_black_24dp"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textButtonvalider"
+        android:layout_below="@id/valider"
+        android:text="Guidez-Vous"
+        android:fontFamily="casual"
+        android:textColor="@color/secondaryTextColor"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textHop2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textButtonvalider"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="@color/accent_material_light_1"
+        android:visibility="invisible"
+        android:text="Pour commencer votre parcours cliquez pour vous guider"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem" />
+
+
+    <ImageView
+        android:id="@+id/carteActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/primaryLightColor"
+        android:src="@drawable/plan"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/closeCarteActivity"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="carteUp"
+        android:background="@drawable/circle"
+        android:text="x"
+        android:visibility="invisible" />
+</RelativeLayout>
+

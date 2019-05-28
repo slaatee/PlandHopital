@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fond">
+    <TextView
+        android:id="@+id/aide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="AIDE"
+        android:fontFamily="casual"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aide"  >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:text="@string/principe" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:text="@string/utilisation" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="casual"
+            android:textColor="#fff"
+            android:text="@string/commentcamarche" />
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

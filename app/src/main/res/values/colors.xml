@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b8860b</color>
+    <color name="colorPrimaryDark">#304c6f</color>
+    <color name="colorAccent">#0cb5cb</color>
+    <color name="accent_material_light_1">#b5c6da</color>
+    <color name="primary_dark_material_light">#2f4b6d</color>
+    <color name="primary_material_light">#03a9f4</color>
+    <color name="foreground_material_light">#29578a</color>
+    <color name="background_material_light">#86aac5</color>
+    <color name="primaryColor">#00838f</color>
+    <color name="primaryLightColor">#4fb3bf</color>
+    <color name="primaryDarkColor">#005662</color>
+    <color name="secondaryColor">#546e7a</color>
+    <color name="secondaryLightColor">#819ca9</color>
+    <color name="secondaryDarkColor">#29434e</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="my_spinner_text_color">#fff</color>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fond">
+
+<TextView
+    android:id="@+id/etape1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:text="ETAPE 1 : Scanner votre position"
+    android:fontFamily="casual"
+    android:textSize="18dp"
+    android:textStyle="italic"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:textAlignment="center"
+    android:textColor="#fff"/>
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1px"
+    android:background="#fff" />
+    <View
+        android:layout_below="@id/etape1"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#fff" />
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/circle"
+        android:fontFamily="casual"
+        android:onClick="scannerUp"
+        android:text="Scan Qr Code"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scan"
+        android:layout_margin="15dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Scannez le Qr Code près de vous pour vous situer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Faîtes vos choix pour vous situer si vous n'avez de scanner installé"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <Spinner
+        android:id="@+id/spinnerScan"
+        style="@style/spinner_style"
+        android:ellipsize="marquee"
+        android:text="@string/position_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:popupBackground="@color/primaryDarkColor"/>
+
+    <Button
+        android:id="@+id/positionBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/spinnerScan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle"
+        android:fontFamily="casual"
+        android:onClick="maPosition"
+        android:text="valider"
+        android:textColor="#fff"
+        android:popupBackground="#ffffff"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/positionBtn"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/plan" />
+
+</RelativeLayout>

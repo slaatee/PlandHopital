@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fond">
+
+    <TextView
+        android:id="@+id/etape2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="ETAPE 2 : Choissisez votre destination"
+        android:fontFamily="casual"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#fff" />
+    <View
+        android:layout_below="@id/etape2"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:background="#fff" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/spinner_style"
+        android:popupBackground="@color/primaryDarkColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etape2"
+        android:prompt="@string/destination_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColorHint="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/circle"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:onClick="maDestination"
+        android:text="valider"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imgDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valider"
+        android:src="@drawable/entree" />
+</RelativeLayout>
